@@ -2,6 +2,11 @@ import java.util.Scanner;
 import java.util.Locale;
 
 
+/**
+ * A classe Contador fornece um método para contar de um número inteiro até outro,
+ * printando cada número presente no intervalo. Os parâmetros são fornecidos pelo
+ * usuário via input.
+ */
 public class Contador {
     public static void main(String[] args) {
         Scanner terminal = new Scanner(System.in).useLocale(Locale.US);
@@ -32,6 +37,12 @@ public class Contador {
     }
 }
 
+/**
+ * Exception é lançada quando os parâmetros são invalidos.
+ * A exceção indica que o primeiro parâmetro é maior que o segundo.
+ * 
+ * @param message Envia uma mensagem detalhando a exceção.
+ */
 class ParametrosInvalidosException extends Exception {
     public ParametrosInvalidosException(String message) {
         super(message);
